@@ -1,0 +1,135 @@
+/* General Footer Styling */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1 1 250px; /* Responsive width for each section */
+  margin: 10px;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f8f9fa;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #21a1f1;
+}
+
+.footer-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-section button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Address and Newsletter */
+.footer-section p {
+  margin: 10px 0;
+}
+.footer-section3 {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section3 h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section3 form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-section3 input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.footer-section3 button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-section3 button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    max-width: none;
+    text-align: center;
+  }
+
+  .footer-section ul {
+    text-align: center;
+  }
+}

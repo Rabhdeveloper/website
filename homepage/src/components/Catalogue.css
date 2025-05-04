@@ -1,0 +1,116 @@
+/* Overall container styling */
+.catalogue-container {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .catalogue-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Description styling */
+  .catalogue-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Grid layout for catalogue items */
+  .catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-items: center;
+  }
+  
+  /* Individual catalogue item card */
+  .catalogue-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    max-width: 300px; /* Restrict the max width of the item */
+  }
+  
+  /* Hover effect for item */
+  .catalogue-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Catalogue item image */
+  .catalogue-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Catalogue item title */
+  .catalogue-item-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on title */
+  .catalogue-item:hover .catalogue-item-title {
+    color: #007bff; /* Blue for hover */
+  }
+  
+  /* Catalogue item description */
+  .catalogue-item-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Price styling - remove if not needed */
+  .catalogue-item-price {
+    font-size: 1.2rem;
+    color: #27ae60; /* Green for price */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .catalogue-title {
+      font-size: 2rem;
+    }
+  
+    .catalogue-description {
+      font-size: 1rem;
+    }
+  
+    .catalogue-item-title {
+      font-size: 1.4rem;
+    }
+  
+    .catalogue-item-description {
+      font-size: 1rem;
+    }
+  
+    .catalogue-item-price {
+      font-size: 1.1rem;
+    }
+  }
+  

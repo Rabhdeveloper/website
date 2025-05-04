@@ -1,0 +1,118 @@
+/* Container styling for the entire page */
+.page-container {
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7); /* Gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the machine details container */
+.machine-details {
+  background: #ffffff; /* White card */
+  border-radius: 16px; /* Rounder corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow for emphasis */
+  max-width: 800px;
+  width: 90%;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.machine-details:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling for the machine image */
+.machine-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover; /* Crop the image for uniformity */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.machine-image:hover {
+  transform: scale(1.05); /* Slight image zoom effect */
+}
+
+/* Styling for the machine title */
+h1 {
+  font-size: 2rem;
+  color: #673ab7; /* Bold purple for the title */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Separator line */
+hr {
+  border: 0;
+  height: 2px;
+  background: #673ab7; /* Matches the title color */
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* Styling for the machine description */
+.machine-description {
+  text-align: justify; /* Justified alignment for text readability */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444; /* Darker gray for better contrast */
+  margin-top: 15px;
+  padding: 10px;
+  background: #f3f3f3; /* Light gray for better text separation */
+  border-radius: 8px;
+}
+
+/* Paragraphs inside the description */
+.machine-description p {
+  margin-bottom: 15px;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e53935; /* Vibrant red for errors */
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .machine-details {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .machine-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .machine-details {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .machine-description {
+    font-size: 0.9rem;
+  }
+
+  hr {
+    width: 70%; /* Adjust the line width for smaller screens */
+  }
+}

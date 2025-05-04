@@ -1,0 +1,63 @@
+.slider-container {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for the slider */
+    margin: 0 auto; /* Center the slider */
+    padding: 20px; /* Add some padding */
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Light gradient background */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  }
+  
+  .slide {
+    position: relative;
+    overflow: hidden; /* Hide overflow for a cleaner look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition on hover */
+  }
+  
+  .slide:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .slide img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the slide's border radius */
+    filter: brightness(0.9); /* Slightly darken images for better text contrast */
+  }
+  
+  h1 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Title color */
+    font-size: 2.5rem; /* Increase font size */
+    text-transform: uppercase; /* Uppercase title */
+    letter-spacing: 1px; /* Spacing between letters */
+  }
+  
+  .slider-dots {
+    bottom: -30px; /* Position dots below the slider */
+  }
+  
+  .slider-dots li {
+    margin: 0 5px; /* Space between dots */
+  }
+  
+  .slider-dots li.slick-active button {
+    background: #ff5722; /* Active dot color */
+  }
+  
+  .slider-dots li button {
+    background: #ccc; /* Inactive dot color */
+    border-radius: 50%; /* Round dots */
+    width: 12px; /* Dot size */
+    height: 12px; /* Dot size */
+    opacity: 0.7; /* Slight transparency */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .slider-dots li button:hover {
+    background: #ff5722; /* Change color on hover */
+    transform: scale(1.2); /* Enlarge on hover */
+  }
